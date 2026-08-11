@@ -1,0 +1,6 @@
+{"id":"readme-structure","area":"documentation","title":"Refine README structure","status":"done","priority":"high","notes":"Create a clear overview, repository layout, and usage guidance."}
+{"id":"license-and-contributing","area":"governance","title":"Add contribution and license scaffolding","status":"done","priority":"medium","notes":"Introduce basic project governance files for a more professional repository."}
+{"id":"firmware-artifact","area":"firmware","title":"Extract Arduino sketch into repository artifact","status":"done","priority":"high","notes":"Create firmware/plant_anomaly.ino from the ledger implementation."}
+{"id":"jsonl-ledger","area":"tracking","title":"Create JSONL development ledger","status":"done","priority":"medium","notes":"Track repo development targets as structured JSONL records."}
+{"id":"safety-and-reproducibility","area":"documentation","title":"Document safety and reproducibility expectations","status":"planned","priority":"high","notes":"Add explicit notes about hazards, assumptions, and how to validate results."}
+{"id":"results-and-data-path","area":"data","title":"Create a place for collected results and logs","status":"planned","priority":"medium","notes":"Add a data directory for protocol notes, serial logs, and analysis outputs."}

@@ -1,18 +1,40 @@
 # PEAR Lab Replication
 
-This repository contains the experimental ledger for replicating the PEAR Lab plant anomaly experiment.
+This repository is a learning-oriented, documentation-first project for capturing and organizing a PEAR Lab-style plant anomaly experiment. It is meant to be clear, reproducible, and easy to extend as the project evolves.
 
-## Contents
+## Purpose
 
-- `pear_lab_replication_ledger.md` — detailed experimental framework, hardware BOM, circuit diagram, Arduino code, and test protocol.
+The goal of this repository is to turn a speculative experiment into a structured, reviewable artifact. It includes:
+
+- a narrative experimental ledger,
+- a concrete firmware sketch for the Arduino implementation,
+- and a lightweight development tracker for improving the repository itself.
+
+## Repository layout
+
+- `pear_lab_replication_ledger.md` — the main experimental framework, BOM, circuit notes, and test protocol.
+- `firmware/plant_anomaly.ino` — the Arduino sketch derived from the ledger.
+- `repo_development_targets.jsonl` — a JSONL ledger of repository development tasks and status.
+- `CONTRIBUTING.md` — guidance for making changes.
+- `CHANGELOG.md` — a short history of notable repository updates.
+
+## Current status
+
+This repository is intentionally simple and educational. It is not presented as a validated scientific result; it is a structured baseline for discussion, replication, and refinement.
 
 ## Usage
 
-1. Review the markdown file to understand the experimental setup.
-2. Build the circuit and wire the Arduino as described.
-3. Run the test protocol and collect results.
+1. Read the experimental ledger to understand the setup and rationale.
+2. Review the firmware sketch in `firmware/plant_anomaly.ino`.
+3. Build the described circuit and run the protocol carefully.
+4. Record observations and results in a separate data folder or log file as the experiment progresses.
 
-## Notes
+## Safety and scope notes
 
-- This repository is intentionally minimal.
-- Add additional documentation, schematics, or data files as the experiment progresses.
+- Treat this as a hands-on educational project rather than a proven scientific method.
+- Exercise normal caution with mains-powered hardware and electronic assemblies.
+- Keep the experiment focused on reproducibility and documentation rather than claiming a result too early.
+
+## Contributing
+
+See `CONTRIBUTING.md` for guidance on improving the repository.
