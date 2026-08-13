@@ -12,8 +12,9 @@ What it does
 
 Usage examples
 
-- Claim: python3 scripts/claim_unclaim.py claim <child-id> --owner "Engineer"
-- Unclaim: python3 scripts/claim_unclaim.py unclaim <child-id> --owner "Engineer"
+- Claim (direct): python3 scripts/claim_unclaim.py claim <child-id> --owner "Engineer"
+- Claim (wrapper): python3 scripts/skill_claim.py claim <child-id> --owner "Engineer" --message "optional note"
+- Unclaim (wrapper): python3 scripts/skill_claim.py unclaim <child-id> --owner "Engineer"
 
 Notes
 

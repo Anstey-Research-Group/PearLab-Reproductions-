@@ -11,8 +11,9 @@ What it does
 
 Usage examples
 
-- Local: python3 scripts/validate_mirrored_ledger.py mirrored_coach_ledger_v3.jsonl
-- CI: .github/workflows/validate-ledger.yml already invokes the validator; this skill documents the command and behavior.
+- Local (direct): python3 scripts/validate_mirrored_ledger.py mirrored_coach_ledger_v3.jsonl
+- Local (wrapper): python3 scripts/skill_validate.py mirrored_coach_ledger_v3.jsonl
+- CI: .github/workflows/validate-ledger.yml already invokes the validator; the new Skills CI (.github/workflows/skills-ci.yml) runs wrapper smoke tests.
 
 Notes
 

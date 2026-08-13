@@ -14,6 +14,7 @@ Usage examples
 
 - Edit .vscode/tasks.json to add tasks with "inAgents": true
 - Use the generate-run-commands skill to propose run commands and log them to the discussion ledger
+- Wrapper usage: python3 scripts/skill_gen_run_commands.py --show  (or --write to write the recommended tasks.json)
 
 Notes
 
