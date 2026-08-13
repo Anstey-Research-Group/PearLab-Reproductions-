@@ -21,6 +21,18 @@ Message format (per-line JSON object)
 - refs (array of strings): related ledger ids or file refs (e.g., mirrored_coach_ledger_v3)
 - body (string): free-text content
 
+Recommended decision format for higher-signal messages
+
+When a message contains a decision, a semantic review result, or an instruction that should be tracked explicitly, include:
+
+- decision_id (string): short stable identifier (e.g., dec-001)
+- rationale (string): why this decision was made
+- action_items (array of strings): concrete next steps
+- refs (array of strings): linked ledger records or files
+- owner (string): who owns the follow-up
+
+This keeps brief back-and-forth updates structured without turning them into full tickets.
+
 Working conventions
 
 - Short messages only: use the ledger for quick confirmations, claims, or short questions. Use issues/PRs for longer discussions.
