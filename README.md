@@ -14,7 +14,8 @@ The goal of this repository is to turn a speculative experiment into a structure
 
 - `pear_lab_replication_ledger.md` — the main experimental framework, BOM, circuit notes, and test protocol.
 - `firmware/plant_anomaly.ino` — the Arduino sketch derived from the ledger.
-- `repo_development_targets.jsonl` — a JSONL ledger of repository development tasks and status.
+- `repo_development_targets.jsonl` — a JSONL ledger of repository development tasks and status, with each target traced back to a source section in the coach ledger.
+- `mirrored_coach_ledger.jsonl` — a structured mirror of the coach ledger's major sections, including parent targets and child subtasks for each mirrored area.
 - `CONTRIBUTING.md` — guidance for making changes.
 - `CHANGELOG.md` — a short history of notable repository updates.
 

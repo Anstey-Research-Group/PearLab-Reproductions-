@@ -1,0 +1,36 @@
+name: Validate Mirrored Ledger
+
+on:
+  pull_request:
+    paths:
+      - 'mirrored_coach_ledger_v3.jsonl'
+      - 'mirrored_coach_ledger*.jsonl'
+      - 'scripts/**'
+      - '.github/**'
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Run validator
+        run: |
+          python3 scripts/validate_mirrored_ledger.py mirrored_coach_ledger_v3.jsonl
+
+      - name: Upload summary
+        if: success()
+        uses: actions/upload-artifact@v4
+        with:
+          name: mirrored-coach-ledger-summary
+          path: mirrored_coach_ledger_summary.json
+
+      - name: Display summary
+        if: success()
+        run: cat mirrored_coach_ledger_summary.json
