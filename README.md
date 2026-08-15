@@ -67,12 +67,12 @@ See `CONTRIBUTING.md` for guidance on improving the repository.
 2.  **Stage 1 Boost (Q1)**: Capacitor C1 strips away baseline DC voltage. Q1 amplifies the tiny AC static wave.
 3.  **Stage 2 Boost (Q2)**: Capacitor C2 blocks secondary DC shifts. Q2 pushes the final noise wave into a chaotic, readable 0V–5V swing.
 ---
-## 4. Wiring Layout
+## 4. Wiring Layout Primitives 
 1.  **Noise Input**: Wire the amplified analog output of your Zener circuit straight to **Analog Input Pin A0** on the Arduino.
 2.  **Relay Logic**: Connect your dual-channel 5V relay module input pins to **Digital Output Pins 2 and 3**.
 3.  **Mains Delivery**: Wire the power lines for the Left LED through Relay 1 (Pin 2) and the Right LED through Relay 2 (Pin 3).
 ---
-## 5. Complete Replication Code
+## 5. Proposed Skeleton Replication Code
 This firmware runs a mandatory **Von Neumann debiasing engine** to completely filter out physical circuit shifts, ensuring that any deviation discovered is mathematically real.
 ```cpp
 // PIN CONFIGURATION
