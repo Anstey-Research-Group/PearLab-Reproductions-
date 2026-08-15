@@ -151,4 +151,5 @@ Place a rapid-growth, light-hungry plant (like a young **Common Sunflower** or *
 ## 7. Critical Safeguards Against Interference
 *   **Electromagnetic Shielding**: Relays output a micro-electromagnetic pulse when clicking. Wrap your Zener board in aluminum foil (**Grounded Faraday Shielding**) and keep it outside the primary light-tight box to prevent feedback.
 *   **Thermal Deflection**: Plant respiration alters local chamber heat. Keep the Arduino and the noise circuit board **completely outside the box** to ensure that environmental temperature shifts cannot drift the transistor thresholds.
-- Geo | AnsteyResearch -
+
+Geo | AnsteyResearch -
