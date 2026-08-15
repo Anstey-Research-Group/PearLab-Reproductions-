@@ -1,0 +1,44 @@
+{
+  "exp-framework-mirror": {
+    "total_children": 2,
+    "completed_children": 2,
+    "blocked_children": 0,
+    "last_changed": "2026-08-12T23:11:07-07:00"
+  },
+  "hardware-bom-mirror": {
+    "total_children": 3,
+    "completed_children": 1,
+    "blocked_children": 0,
+    "last_changed": "2026-08-13T00:09:00-07:00"
+  },
+  "circuit-mirror": {
+    "total_children": 2,
+    "completed_children": 0,
+    "blocked_children": 0,
+    "last_changed": "2026-08-12T23:32:00-07:00"
+  },
+  "wiring-layout-mirror": {
+    "total_children": 2,
+    "completed_children": 0,
+    "blocked_children": 0,
+    "last_changed": "2026-08-12T23:32:00-07:00"
+  },
+  "firmware-mirror": {
+    "total_children": 2,
+    "completed_children": 2,
+    "blocked_children": 0,
+    "last_changed": "2026-08-11T03:07:08-07:00"
+  },
+  "protocol-mirror": {
+    "total_children": 2,
+    "completed_children": 0,
+    "blocked_children": 0,
+    "last_changed": "2026-08-12T23:32:00-07:00"
+  },
+  "safeguards-mirror": {
+    "total_children": 2,
+    "completed_children": 0,
+    "blocked_children": 0,
+    "last_changed": "2026-08-12T23:32:00-07:00"
+  }
+}

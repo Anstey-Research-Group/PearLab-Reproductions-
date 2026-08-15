@@ -1,0 +1,23 @@
+name: Skills CI
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+      - 'task/*'
+      - 'automation/*'
+
+jobs:
+  skills-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+      - name: Run skill wrapper tests
+        run: |
+          chmod +x scripts/run_skill_tests.sh
+          ./scripts/run_skill_tests.sh
