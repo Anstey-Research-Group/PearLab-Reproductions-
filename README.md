@@ -140,7 +140,7 @@ int getRawBit() {
 }
 ```
 ---
-## 6. Strict Testing Protocol
+## 6. Proposed Testing Protocol
 ### Phase 1: The Baseline Control (7 to 14 Days)
 Hang both lamps inside the light-tight box with **no plant inside**. Let the script cycle the lamps back and forth uninterrupted. 
 *   **Verification**: Pull the logged serial lines. The total count must sit at a **50/50 split** (within acceptable short-term random bounds). If a massive bias shows up here, check for noise leakage in your breadboard.
@@ -148,7 +148,7 @@ Hang both lamps inside the light-tight box with **no plant inside**. Let the scr
 Place a rapid-growth, light-hungry plant (like a young **Common Sunflower** or **Radish Greens**) directly on the **Left side** of the chamber under LED 1. Leave the right side empty. Do not alter a single line of code. Let the system run automatically.
 *   **The Evaluation**: Compare the statistical distribution of Phase 2 against Phase 1. Any consistent, statistically significant elevation of the Left LED states reveals a successful replication of the PEAR anomaly.
 ---
-## 7. Critical Safeguards Against Interference
+## 7. Safeguards Against electro/Magnetic Interferences
 *   **Electromagnetic Shielding**: Relays output a micro-electromagnetic pulse when clicking. Wrap your Zener board in aluminum foil (**Grounded Faraday Shielding**) and keep it outside the primary light-tight box to prevent feedback.
 *   **Thermal Deflection**: Plant respiration alters local chamber heat. Keep the Arduino and the noise circuit board **completely outside the box** to ensure that environmental temperature shifts cannot drift the transistor thresholds.
 
